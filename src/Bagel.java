@@ -80,7 +80,7 @@ public class Bagel extends JFrame implements KeyListener {
         }
 
         //а это первая отрисовка кругов
-        //OvalBig.constraction(g);
+        OvalBig.constraction(g);
         OvalSmall.constraction(g);
     }
 
