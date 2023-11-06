@@ -24,7 +24,7 @@ public class Bagel extends JFrame implements KeyListener {
         //размер
         setSize(600, 600);
         //окно фиксированного размера
-        setResizable(false);
+        setResizable(true);
         //делаем его видимым
         setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -35,7 +35,7 @@ public class Bagel extends JFrame implements KeyListener {
     @Override
     public void paint(Graphics g) {
         //очищаем фрейм
-        removeAll();
+        super.paint(g);
 
         //вычисляем значения периметров и площадь
         double temp = OvalBig.getSquare() - OvalSmall.getSquare();
